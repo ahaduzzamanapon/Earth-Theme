@@ -2,7 +2,7 @@
   "name": "earth-theme",
   "displayName": "Earth Theme",
   "description": "The Earth Theme extension brings the serene beauty of nature to your coding environment. Inspired by the natural hues and textures of our planet, this theme creates a calming and harmonious backdrop for your coding sessions.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.87.0"

@@ -72,7 +72,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#5e98b3"
+				"foreground": "#2e4a57"
 			}
 		},
 		{
@@ -83,58 +83,38 @@
 			],
 			"settings": {
 				"foreground": "#89DDFF",
-				"fontStyle": "bold"
 			}
 		},
 		{
-			"name": "Rainbow Brackets 1",
-			"scope": "punctuation.section.bracket",
-			"settings": {
-				"foreground": "#FF5370" // Red color for brackets
-			}
-		},
-		{
-			"name": "Rainbow Brackets 2",
-			"scope": "punctuation.section.brace",
-			"settings": {
-				"foreground": "#82AAFF" // Blue color for braces
-			}
-		},
-		{
-			"name": "Rainbow Brackets 3",
-			"scope": "punctuation.section.parenthesis",
-			"settings": {
-				"foreground": "#C3E88D" // Green color for parentheses
-			}
-		},
-		{
-			"name": "Rainbow Brackets 4",
-			"scope": "punctuation.section.angle",
-			"settings": {
-				"foreground": "#F78C6C" // Orange color for angle brackets
-			}
-		},
-		{
-			"name": "Rainbow Brackets 5",
-			"scope": "punctuation.section.embedded",
-			"settings": {
-				"foreground": "#B2CCD6" // Cyan color for embedded brackets
-			}
-		},
-		{
-			"name": "Rainbow Brackets 6",
-			"scope": "punctuation.section.array",
-			"settings": {
-				"foreground": "#C792EA" // Purple color for array brackets
-			}
-		},
-		{
-			"name": "Rainbow Brackets 7",
-			"scope": "punctuation.section.parameters",
-			"settings": {
-				"foreground": "#89DDFF" // Light blue color for parameter brackets
-			}
-		},
+            "scope": [
+                "punctuation.section.bracket.start",
+                "punctuation.section.bracket.end"
+            ],
+            "settings": {
+                // Define colors for each pair of brackets
+                "foreground": "#FF5370" // Red for round brackets
+            }
+        },
+        {
+            "scope": [
+                "punctuation.section.brace.start",
+                "punctuation.section.brace.end"
+            ],
+            "settings": {
+                // Define colors for each pair of brackets
+                "foreground": "#82AAFF" // Blue for curly braces
+            }
+        },
+        {
+            "scope": [
+                "punctuation.section.square.start",
+                "punctuation.section.square.end"
+            ],
+            "settings": {
+                // Define colors for each pair of brackets
+                "foreground": "#C3E88D" // Green for square brackets
+            }
+        },
 		{
 			"name": "Colors",
 			"scope": [
@@ -742,5 +722,25 @@
 			"#C792EA", // Purple
 			"#89DDFF"  // Light blue
 		]
-	}
+	},
+	"semanticHighlighting": true,
+    "textMateRules": [
+        {
+            "scope": [
+                // Add a scope for URLs
+                "text.html.markdown markup.underline.link.markdown",
+                "text.html.markdown markup.underline.link",
+                "text.html.markdown markup.underline",
+                "text.html.markdown markup.underline.link string",
+                "text.html.markdown markup.underline.link.text.html.markdown",
+                "text.html.markdown markup.underline.link.text.html.markdown punctuation.definition.string",
+                "text.html.markdown markup.underline.link.text.html.markdown punctuation.definition.string.begin.markdown",
+                "text.html.markdown markup.underline.link.text.html.markdown punctuation.definition.string.end.markdown"
+            ],
+            "settings": {
+                // Apply underline style to the URLs
+                "fontStyle": "underline"
+            }
+        }
+    ]
 }
