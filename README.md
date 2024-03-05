@@ -1,4 +1,4 @@
-# earth-theme README
+# Earth-theme README
 
 ## Working with Markdown
 

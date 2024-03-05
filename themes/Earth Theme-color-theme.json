@@ -72,7 +72,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#546E7A"
+				"foreground": "#5e98b3"
 			}
 		},
 		{
@@ -82,7 +82,57 @@
 				"string constant.other.placeholder"
 			],
 			"settings": {
-				"foreground": "#EEFFFF"
+				"foreground": "#89DDFF",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Rainbow Brackets 1",
+			"scope": "punctuation.section.bracket",
+			"settings": {
+				"foreground": "#FF5370" // Red color for brackets
+			}
+		},
+		{
+			"name": "Rainbow Brackets 2",
+			"scope": "punctuation.section.brace",
+			"settings": {
+				"foreground": "#82AAFF" // Blue color for braces
+			}
+		},
+		{
+			"name": "Rainbow Brackets 3",
+			"scope": "punctuation.section.parenthesis",
+			"settings": {
+				"foreground": "#C3E88D" // Green color for parentheses
+			}
+		},
+		{
+			"name": "Rainbow Brackets 4",
+			"scope": "punctuation.section.angle",
+			"settings": {
+				"foreground": "#F78C6C" // Orange color for angle brackets
+			}
+		},
+		{
+			"name": "Rainbow Brackets 5",
+			"scope": "punctuation.section.embedded",
+			"settings": {
+				"foreground": "#B2CCD6" // Cyan color for embedded brackets
+			}
+		},
+		{
+			"name": "Rainbow Brackets 6",
+			"scope": "punctuation.section.array",
+			"settings": {
+				"foreground": "#C792EA" // Purple color for array brackets
+			}
+		},
+		{
+			"name": "Rainbow Brackets 7",
+			"scope": "punctuation.section.parameters",
+			"settings": {
+				"foreground": "#89DDFF" // Light blue color for parameter brackets
 			}
 		},
 		{
@@ -681,5 +731,16 @@
 				"foreground": "#EEFFFF"
 			}
 		}
-	]
+	],
+	"workbench.colorCustomizations": {
+		"tab.activeBorder": [
+			"#FF5370", // Red
+			"#82AAFF", // Blue
+			"#C3E88D", // Green
+			"#F78C6C", // Orange
+			"#B2CCD6", // Cyan
+			"#C792EA", // Purple
+			"#89DDFF"  // Light blue
+		]
+	}
 }
